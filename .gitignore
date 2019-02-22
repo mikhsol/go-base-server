@@ -1,4 +1,6 @@
 # Intellij idea files
 .idea/
 
+.env
+
 go-base-server
