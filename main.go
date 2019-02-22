@@ -34,6 +34,5 @@ func main() {
 	loggedRouter := handlers.LoggingHandler(os.Stdout, router)
 	recoveryRouter := handlers.RecoveryHandler()(loggedRouter)
 
-
 	log.Fatal(http.ListenAndServe(":3000", recoveryRouter))
 }
